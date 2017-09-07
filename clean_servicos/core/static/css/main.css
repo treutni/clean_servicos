@@ -239,6 +239,14 @@ section ul {
     }    
 }
 
+#clientes img {
+    filter: grayscale(1);
+}
+
+#clientes img:hover {
+    filter: grayscale(0);
+}
+
 .contact-modal {
     height: 92%;
     width: 100%;
