@@ -1,0 +1,282 @@
+@import 'normalize.css';
+@import 'header.css';
+@import 'footer.css';
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:100');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+/* Banner */
+
+@keyframes opacity-from-left {
+    0% {transform: translateX(-40px); opacity: 0}
+    100% {transform: none; opacity: 1}
+}
+
+@keyframes opacity-from-top {
+    0% {transform: translateY(40px); opacity: 0}
+    100% {transform: none; opacity: 1}
+}
+
+.banner {
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background: #fff url('../img/banner/banner.jpg') no-repeat center center;
+    width: 100%;
+    height: 650px;
+    font-weight: 100;
+    font-family: 'Libre Franklin', sans-serif;    
+    color: #fff;
+}
+
+.banner-title {
+    margin-top: 185px;
+    font-size: 64px;
+    text-shadow: #444 1px 1px;
+    float: left;
+    text-transform: capitalize;
+    padding-bottom: 45px;
+    border-bottom: 3px solid #fff;
+    margin-bottom: 10px;
+    animation: opacity-from-left .5s;
+    /* animation-delay: .5s; */
+    -webkit-animation: opacity-from-left .5s;
+    /* -webkit-animation-delay: .5s; */
+    -moz-animation: opacity-from-left .5s;
+    /* -moz-animation-delay: .5s; */
+    -ms-animation: opacity-from-left .5s;
+    /* -ms-animation-delay: .5s; */
+    -o-animation: opacity-from-left .5s;
+    /* -o-animation-delay: .5s; */
+}
+
+.banner-desc {  
+    font-size: 36px;
+    text-shadow: #444 1px 1px;
+    float: left;
+    animation: opacity-from-left .5s;
+    /* animation-delay: .5s; */
+    -webkit-animation: opacity-from-left .5s;
+    /* -webkit-animation-delay: .5s; */
+    -moz-animation: opacity-from-left .5s;
+    /* -moz-animation-delay: .5s; */
+    -ms-animation: opacity-from-left .5s;
+    /* -ms-animation-delay: .5s; */
+    -o-animation: opacity-from-left .5s;
+    /* -o-animation-delay: .5s; */
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.container {
+    position: relative;
+    width: 92%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.non-fixed {
+    position: relative;
+    height: 75px;
+    background-color: #ddd;
+    padding: 37px 20px 30px;
+}
+
+.nav-logo {
+    float: left;
+    background: url('../img/header/logo.png') no-repeat center center;
+    background-size: cover;
+    width: 194px;
+    height: 60px;
+
+    animation: opacity-from-top .5s backwards;
+    /* animation-delay: .5s; */
+    -webkit-animation: opacity-from-top .5s backwards;
+    /* -webkit-animation-delay: .5s; */
+    -moz-animation: opacity-from-top .5s backwards;
+    /* -moz-animation-delay: .5s; */
+    -ms-animation: opacity-from-top .5s backwards;
+    /* -ms-animation-delay: .5s; */
+    -o-animation: opacity-from-top .5s backwards;
+    /* -o-animation-delay: .5s; */
+}
+
+.nav-item {
+    float: right;
+    text-decoration: none;
+    color: #555;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.375em;
+    border: 1px solid transparent;
+    padding: 21px;
+    margin: 0 20px;
+
+    animation: opacity-from-top .5s backwards;
+    /* animation-delay: .5s; */
+    -webkit-animation: opacity-from-top .5s backwards;
+    /* -webkit-animation-delay: .5s; */
+    -moz-animation: opacity-from-top .5s backwards;
+    /* -moz-animation-delay: .5s; */
+    -ms-animation: opacity-from-top .5s backwards;
+    /* -ms-animation-delay: .5s; */
+    -o-animation: opacity-from-top .5s backwards;
+    /* -o-animation-delay: .5s; */
+
+    transition: 0.2s border ease-in-out;
+    -webkit-transition: 0.2s border ease-in-out;
+    -moz-transition: 0.2s border ease-in-out;
+    -o-transition: 0.2s border ease-in-out;
+}
+
+.nav-item:hover {
+    border: 1px solid #555;
+}
+
+section {
+    padding: 6.111111111em 0;
+    text-align: center;
+    color: #333;
+}
+
+section ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.zebra {
+    background-color: #008f35;
+    color: #fff;
+}
+
+.zebra .section-title {
+    border-bottom: 5px solid #fff;
+}
+
+.section-title {
+    display: inline-block;
+    font-family: 'Libre Franklin', sans-serif;  
+    font-size: 32px;
+    padding-bottom: 18px;
+    border-bottom: 5px solid #333;
+    margin-bottom: 20px;
+}
+
+.section-sub-title {
+    font-family: 'Libre Franklin', sans-serif;  
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+
+.section-left {
+    width: 48%;
+    float: left;
+    height: auto;
+    margin: 30px 20px 0 0;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.section-right {
+    width: 48%;
+    float: right;
+    height: auto;
+    margin: 30px 0 0 20px;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.first {
+    margin-left: 0 !important;
+}
+
+.section-1-3 {
+    width: 30.5%;
+    margin-left: 4.2%;
+    float: left;
+    text-align: center;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.section-1-4 {
+    width: 23%;
+    margin-left: 2%;
+    margin-top: 45px;
+    float: left;
+    text-align: center;
+    font-size: 22px;
+    min-height: 200px;
+}
+
+.section-1-4 img {
+    margin: auto;
+    max-width: 200px;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.big-num {
+    font-size: 48px;
+}
+
+@media(max-width: 960px) {
+    .section-left, .section-right {
+        width: 100%;
+        margin: 30px 0 0;
+        float: none;
+        text-align: center;
+    }    
+}
+
+.contact-modal {
+    height: 92%;
+    width: 100%;
+    background-color: #fff;
+    color: #008f35;
+    text-align: center;
+}
+
+.contact-modal input {
+    height: 30px;
+    border: 1px solid #ccc;
+    margin: 10px 7px;
+    padding: 7px;
+    width: 94%;
+    color: #008f35;
+}
+
+.contact-modal textarea {
+    border: 1px solid #ccc;
+    margin: 10px 7px;
+    padding: 7px;
+    width: 94%;
+    color: #008f35;
+}
+
+.contact-modal button {
+    padding: 15px;
+    width: 60%;
+    display: inline-block;
+    background-color: transparent;
+    color: #008f35;
+    border: 1.5px solid #008f35;
+    margin: 15px;
+
+    transition: 0.2s all ease-in-out;
+}
+
+.contact-modal button:hover {
+    background-color: #008f35;
+    color: #fff;
+}

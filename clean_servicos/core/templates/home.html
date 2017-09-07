@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}Clean Serviços{% endblock title %}
+
+{% block content %}
+    <section id="empresa">
+        <div class="container clearfix">
+            <h3 class="section-title">Empresa</h3>
+            <h4 class="section-sub-title">
+                A clean serviços é uma empresa que surgiu em junho de 1996, para apoiar seus clientes em serviços auxiliares que não estão atrelados a sua atividade fim, podendo assim concentrar toda a energias de seus administradores e colaboradores para atenderem da melhor forma possível seus clientes e o mercado em geral.
+            </h4> 
+            <div class="section-left">
+                <p>
+                    Dispomos  de  profissionais  selecionados  e  treinados que limpam com eficiência e
+                    segurança tudo o que você precisar, usando equipamentos e produtos de qualidade.
+                </p>
+            </div>
+            <div class="section-right">
+                <p>
+                    A Clean Serviços também terceiriza e administra mão-de-obra em geral, tais
+                    como, motorista,   telefonista,   recepcionista,  apoio   administrativo,  limpeza,
+                    jardinagem, lavanderia, portaria, zeladoria, entre outros. No âmbito comercial, industrial e residencial,
+                    de acordo com a sua necessidade.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="servicos" class="zebra">
+        <div class="container clearfix">
+            <h3 class="section-title">Serviços</h3>
+            <h4 class="section-sub-title">
+                A clean serviços entrou no mercado para suprir a necessidade de todo e qualquer tipo de limpeza, residencial, comercial e industrial.
+                <br>
+                Dispomos de profissionais selecionados e treinados que limpam com eficiência e segurança tudo o que você precisar, usando equipamentos e produtos adequados e com qualidade.
+            </h4>
+            <div class="section-1-3 first">
+                <p>
+                    <span class="big-num">1.</span> O serviço é realizado dentro dos padrões de qualidade da Clean Serviços, em horários acordados com a necessidade do cliente.
+                </p>
+            </div>
+            <div class="section-1-3">
+                <p>
+                    <span class="big-num">2.</span> Os serviços prestados por funcionários da Clean Serviços são supervisionados
+                    regularmente ou de acordo com a solicitação do cliente.
+                </p>
+            </div>
+            <div class="section-1-3">
+                <p>
+                    <span class="big-num">3.</span> A Clean Serviços fornece uniforme e equipamento de proteção individual, material,
+                    produtos e equipamento de limpeza necessários para a realização dos serviços.
+                </p>
+            </div>
+            <div class="section-1-4 first">
+                <img class="invert" src="{% static 'img/services/cleaning.png' %}" alt="">
+                <h4>Limpeza</h4>
+            </div>
+            <div class="section-1-4">
+                <img class="invert" src="{% static 'img/services/gardening.png' %}" alt="">
+                <h4>Jardinagem</h4>
+            </div>
+            <div class="section-1-4">
+                <img class="invert" src="{% static 'img/services/janitorial.png' %}" alt="">
+                <h4>Zeladoria</h4>
+            </div>
+            <div class="section-1-4">
+                <img class="invert" src="{% static 'img/services/telefonist.png' %}" alt="">
+                <h4>Telefonista</h4>
+            </div>
+            <div class="section-1-4 first">
+                <img class="invert" src="{% static 'img/services/receptionist.png' %}" alt="">
+                <h4>Recepcionista</h4>
+            </div>
+            <div class="section-1-4">
+                <img class="invert" src="{% static 'img/services/driver.png' %}" alt="">
+                <h4>Motorista</h4>
+            </div>
+            <div class="section-1-4">
+                <img class="invert" src="{% static 'img/services/business.png' %}" alt="">
+                <h4>Auxíliar Administrativo</h4>
+            </div>
+            <div class="section-1-4">
+                <img class="invert" src="{% static '/img/services/shipping.png' %}" alt="">
+                <h4>Carregadores</h4>
+            </div>
+        </div>        
+    </section>
+    <section id="clientes">
+        <div class="container clearfix">
+            <h3 class="section-title">Clientes</h3>
+            <h4 class="section-sub-title">Conheça nossos clientes</h4>
+            <div class="section-1-4 first"><img src="{% static 'img/clients/logo_boticario.png' %}" alt=""></div>
+            <div class="section-1-4"><img src="{% static 'img/clients/logo_beira_rio.png' %}" alt=""></div>
+            <div class="section-1-4"><img src="{% static 'img/clients/logo_feevale.jpg' %}" alt=""></div>
+            <div class="section-1-4"><img src="{% static 'img/clients/logo_sesi.jpg' %}" alt=""></div>
+            <div class="section-1-4 first"><img src="{% static 'img/clients/logo_sicoob.png' %}" alt=""></div>
+            <div class="section-1-4"><img src="{% static 'img/clients/logo_arezzo.gif' %}" alt=""></div>
+            <div class="section-1-4"><img src="{% static 'img/clients/logo_unisinos.jpg' %}" alt=""></div>
+        </div>
+    </section>
+    <section id="contato" class="zebra">
+        <div class="container clearfix">
+            <h3 class="section-title">Contato</h3>
+            <h4 class="section-sub-title">Converse conosco!</h4>
+            <div class="section-right">
+                <div class="contact-modal">
+                    <form action="">
+                        <input type="text" placeholder="Nome" name="nome">
+                        <input type="text" placeholder="Empresa" name="nome">
+                        <input type="email" placeholder="Email" name="nome">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <button>Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
